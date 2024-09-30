@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) , url(12.jpg);
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+  
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between; /* To evenly distribute the links horizontally */
+    align-items: center; /* To vertically center the links */
+    width: 20%;
+    height: 100px;
+    color: #fff;
+}
+
+.menu a:hover{
+   border: 1px solid indianred;
+   background: transparent;
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: indianred;
+}
+.register a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+.h-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 3.5em;
+}
+.h-text a{
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-text a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+/* Add this media query for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+      height: 70vh; /* Adjust header height for smaller screens */
+    }
+    
+    .menu {
+      width: auto; /* Adjust width to fit content */
+    }
+    
+    .menu a {
+      font-size: 16px; /* Decrease font size for smaller screens */
+    }
+    
+    .register a,
+    .h-text a {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 16px; /* Decrease font size for smaller screens */
+    }
+    
+    .h-text h1 {
+      font-size: 2.5em; /* Decrease font size for smaller screens */
+    }
+    
+    .container {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center cards vertically */
+    }
+    
+    .card-wrapper {
+      margin-bottom: 20px; /* Add space between cards on smaller screens */
+    }
+    
+    .details h2 .job-title {
+      font-size: 0.8rem; /* Decrease font size for smaller screens */
+      line-height: 2rem; /* Adjust line height for smaller screens */
+    }
+    
+    .profile-two .social-icons li a {
+      width: 40px; /* Adjust social icons size for smaller screens */
+      height: 40px; /* Adjust social icons size for smaller screens */
+      line-height: 40px; /* Adjust social icons size for smaller screens */
+      font-size: 18px; /* Decrease font size for smaller screens */
+    }
+    
+    header {
+        height: 100vh; /* Set header height to 50% of the viewport height */
+      }
+      
+      .container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards vertically */
+        padding: 20px; /* Add padding to the container */
+        box-sizing: border-box; /* Include padding in width calculation */
+      }
+      
+      .card-wrapper {
+        width: 100%; /* Make card wrapper full width */
+        max-width: 400px; /* Limit card width */
+        margin-bottom: 2px; /* Add space between cards on smaller screens */
+      }
+      
+      .details {
+        position: relative; /* Change position to relative */
+        bottom: auto; /* Remove bottom positioning */
+        left: auto; /* Remove left positioning */
+        transform: none; /* Remove transform */
+        width: 100%; /* Make details full width */
+        margin-top: 20px; /* Add margin to the top */
+      }
+      
+      .jane {
+        position: relative; /* Change position to relative */
+        bottom: auto; /* Remove bottom positioning */
+        left: auto; /* Remove left positioning */
+        opacity: 1; /* Ensure opacity is visible */
+        background: none; /* Remove background color */
+        height: auto; /* Change height to auto */
+        transition: none; /* Remove transition */
+        margin-top: 20px; /* Add margin to the top */
+      }
+    }
+  

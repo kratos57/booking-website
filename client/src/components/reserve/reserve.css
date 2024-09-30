@@ -1,0 +1,210 @@
+/* reserve.css */
+
+.reserve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+/* Horizontally center the container */
+ /* Vertically center the container */
+  height: 100vh
+}
+
+.rContainer {
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 100px); /* Adjust height to fit within viewport */
+}
+
+.rClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.hotelName {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.totalPrice {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.totalPrice span {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.roomsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Horizontally center the container */
+}
+
+
+
+.roomItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); /* Set width to 50% of the container minus the gap */
+  flex-grow: 0; /* Prevent item from growing to fill the remaining space */
+}
+
+/* Add a media query to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  .roomItem {
+    width: calc(100% - 20px); /* Set width to 100% for smaller screens */
+  }
+}
+
+
+.roomItemInfo {
+  margin-bottom: 20px;
+}
+
+.roomTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.roomDesc {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.roomMax {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.roomPrice {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.roomAmenities {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.roomAmenities span {
+  font-weight: bold;
+}
+
+.roomAmenities ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.roomAmenities li {
+  margin-bottom: 5px;
+}
+
+.roomSelect {
+  margin-bottom: 10px;
+}
+
+.roomNumber {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.roomNumber input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.viewImagesButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.viewImagesButton:hover {
+  background-color: #0056b3;
+}
+
+.reserveButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.reserveButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.reserveButton:hover:not(:disabled) {
+  background-color: #218838;
+}
+.showFormButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.showFormButton:hover {
+  background-color: #0056b3;
+}

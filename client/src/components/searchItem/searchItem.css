@@ -1,0 +1,149 @@
+.searchItem {
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.siImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.siContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.siTitle {
+  font-size: 20px;
+  color: #0071c2;
+  margin-bottom: 5px;
+}
+
+.siDistance {
+  font-size: 14px;
+  color: #666;
+}
+
+.siType {
+  background-color: #008009;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.siTyp {
+  background-color: #c8661b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.siSubtitle {
+  font-size: 16px;
+}
+
+.siFeatures {
+  font-size: 14px;
+}
+
+.siCancelOp {
+  font-size: 14px;
+  color: #0071c2;
+}
+
+.siCancelOpSubtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.siDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.siRating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.siRating > button {
+  background-color: #003580;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.siDetailTexts {
+  text-align: right;
+}
+
+.siPrice {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.siTaxOp {
+  font-size: 14px;
+  color: #666;
+}
+
+.siCheckButtonContainer {
+  align-self: flex-end;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.siCheckButton:hover {
+  background-color: #00509c;
+}
+
+@media screen and (min-width: 768px) {
+  .searchItem {
+    flex-direction: row;
+  }
+
+  .siDesc {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
+
+.siRating span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28a745;
+  margin-right: 15px;
+}
+
+.siRating button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.siRating button:hover {
+  background-color: #0056b3;
+}
+

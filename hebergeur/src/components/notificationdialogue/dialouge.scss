@@ -1,0 +1,76 @@
+.notification-dialogue {
+    position: fixed;
+    top: 35%;
+    left: 88%;
+
+    bottom: 5%;
+    margin-left: -25%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure dialogue appears above overlay */
+    max-height: 80%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+    h2 {
+      margin-top: 0;
+    }
+  
+    p {
+      margin-bottom: 20px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #0056b3;
+    }
+  
+    .notification-content {
+      max-height: 200px; /* Limit the height to display first 5 notifications */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+  
+    .scrollable-content {
+      overflow-y: auto; /* Enable vertical scrolling for additional notifications */
+      max-height: calc(100% - 120px); /* Calculate remaining height after button and first 5 notifications */
+    }
+  }
+  .notification {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .notification:hover {
+    ul {background-color: rgb(239, 239, 230);
+   
+    }
+  }
+  .notification.even {
+    background-color: white; // or any other color you desire
+  }
+  
+  .notification.odd {
+    background-color: #faf8f8; // or any other color you desire
+  }
+  
+  .notification-dialogue button:hover {
+    background-color: #0056b3;
+  }
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }

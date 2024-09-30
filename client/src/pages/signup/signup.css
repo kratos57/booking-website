@@ -1,0 +1,152 @@
+/* Updated signup.css */
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #aaaeb3; /* Set background color */
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.sContainer {
+  width: 400px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff; /* Set background color */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.link {
+  color: #007bff; /* Blue text color */
+  text-decoration: none; /* Remove default underline */
+  margin-top: 20px; /* Add top margin */
+  display: inline-block; /* Display as block element */
+}
+
+/* Hover effect */
+.link:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.sInput {
+  width: calc(80% - 20px);
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease; /* Add transition effect */
+}
+
+.sInput:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.sButton {
+  width: 82%;
+  padding: 12px;
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.sButton:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+.error-message {
+  color: #dc3545; /* Set error message color */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Additional Styles */
+.signup-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Set title color */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #007bff; /* Set social icon background color */
+  color: #fff; /* Set social icon color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.social-icon:hover {
+  background-color: #0056b3; /* Change social icon background color on hover */
+}
+
+/* Dialog Styles */
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.dialog h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dialog p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dialog input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.dialog label {
+  font-size: 16px;
+}
+
+.dialog button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog button:hover {
+  background-color: #0056b3;
+}

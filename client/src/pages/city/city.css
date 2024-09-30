@@ -1,0 +1,90 @@
+.listSearch {
+  flex: 1;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.listSearch :hover {
+  color: #cccccc;
+
+}
+.lsTitle {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.lsItem {
+  margin-bottom: 20px;
+}
+
+.lsItem > label {
+  font-size: 16px;
+  color: #555555;
+}
+
+.lsOptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.lsOptionInput {
+  width: 40px;
+  height: 20px;
+}
+
+.lsOptionText {
+  flex: 1;
+}
+
+.lsOptionInput[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lsOptionInput[type="checkbox"]:checked {
+  background-color: #febb02;
+  border-color: #febb02;
+}
+
+.lsOptionInput[type="checkbox"]:checked::after {
+  content: '\2714';
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  top: -2px;
+  left: 1px;
+}
+
+.listResult {
+  flex: 3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .listWrapper {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  .listSearch {
+    order: 1; /* Move the search section to appear after the list on smaller screens */
+  }
+
+  .listResult {
+    order: 0; /* Move the list to appear before the search section on smaller screens */
+  }
+}

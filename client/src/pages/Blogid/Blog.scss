@@ -1,0 +1,34 @@
+/* Blog.scss */
+
+/* Container styles */
+.blog-post-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer les éléments horizontalement */
+  text-align: center; /* Centrer le texte */
+}
+
+/* Image styles */
+.siImgp {
+  width: 100%; /* Assurez-vous que l'image occupe toute la largeur du conteneur */
+  max-width: 800px; /* Ajustez la largeur maximale de l'image selon vos besoins */
+  height: auto; /* Permettez à la hauteur de l'image de s'ajuster automatiquement pour maintenir les proportions */
+}
+
+/* Title styles */
+.blog-post-title {
+  font-size: 1.5rem;
+
+  font-weight: bold;
+  margin-top: 0px; /* Espacement entre l'image et le titre */
+}
+
+/* Description styles */
+.blog-post-description {
+  margin-top: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+  max-width: 650px;
+  word-wrap: break-word; /* Assurez-vous que le texte de description s'adapte au conteneur */
+}

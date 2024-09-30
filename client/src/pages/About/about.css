@@ -1,0 +1,137 @@
+/* Global styles */
+.body {
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    margin-top: 120px;
+    height: 300px; /* Adjust height as needed */
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/025/181/412/small/picture-a-captivating-scene-of-a-tranquil-lake-at-sunset-ai-generative-photo.jpg") center/cover no-repeat;
+}
+
+.content {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 24px; /* Decrease font size for smaller screens */
+    letter-spacing: 3px; /* Adjust letter spacing */
+    opacity: 0.9;
+}
+
+.content span {
+    height: 0.5px;
+    width: 50px; /* Decrease width for smaller screens */
+    background: #777;
+    margin: 20px 0; /* Adjust margin for better spacing */
+}
+
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.links {
+    margin: 15px 0;
+}
+
+.links li {
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Adjust width to fit container */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin-bottom for better spacing */
+}
+
+.links li a {
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+
+.links li:hover {
+    border-color: #06d6a0;
+}
+
+.links li:hover a {
+    color: #06d6a0;
+}
+
+.vertical-line {
+    height: 20px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    justify-content: center; /* Center icons */
+    padding: 15px 0;
+}
+
+.icons li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons li svg {
+    font-size: 24px; /* Decrease icon size for smaller screens */
+    opacity: 0.8;
+}
+
+.icons li:hover svg {
+    color: #06d6a0;
+}
+
+@media (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        height: 400px; /* Adjust height for tablets */
+    }
+
+    .content h2 {
+        font-size: 36px; /* Increase font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        height: 250px; /* Adjust height for phones */
+    }
+
+    .content h2 {
+        font-size: 24px; /* Decrease font size for phones */
+    }
+}

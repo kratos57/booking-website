@@ -1,0 +1,85 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem > label {
+  font-size: 12px;
+}
+
+.lsItem > input,
+.lsItem > select,
+.lsItem > span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.lsOptionInput {
+  width: 50px;
+}
+
+.listResult {
+  flex: 3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .listWrapper {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  .listSearch {
+    order: 1; /* Move the search section to appear after the list on smaller screens */
+  }
+
+  .listResult {
+    order: 0; /* Move the list to appear before the search section on smaller screens */
+  }
+}

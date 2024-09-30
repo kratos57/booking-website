@@ -1,0 +1,145 @@
+/* CSS */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay semi-transparent noir */
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+.welcome-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-details p {
+  margin-bottom: 5px;
+}
+
+.logoutButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logoutButton:hover {
+  background-color: #d32f2f;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+}
+
+.detail-item strong {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.reservation-history {
+  margin-top: 20px;
+}
+
+.reservation-history h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reservation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.reservation-details {
+  margin-bottom: 10px;
+}
+
+.reservation-details p {
+  margin: 5px 0;
+}
+
+.reservation-details strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.reservation-details .hotel-name {
+  color: #007bff;
+}
+
+.reservation-details .room-number {
+  color: #28a745;
+}
+
+.reservation-details .check-in-date {
+  color: #ff9800;
+}
+
+.reservation-details .check-out-date {
+  color: #dc3545;
+}
+
+.item {
+  text-align: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.generate-pdf {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,39 @@
+.homeContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeTitle {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 20px;
+  padding: 0 20px; /* Add padding to ensure content doesn't reach edges */
+}
+
+.messengerIconContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: flex-end; /* Align Messenger icon to the right */
+  padding-right: 20px; /* Add padding to align with content */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .homeTitle {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeContainer {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .homeTitle {
+    font-size: 16px; /* Further reduce font size for smaller screens */
+  }
+}

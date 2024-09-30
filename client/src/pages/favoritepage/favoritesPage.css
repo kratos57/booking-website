@@ -1,0 +1,165 @@
+.searchItem {
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .siImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  .siContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .siTitle {
+    font-size: 20px;
+    color: #0071c2;
+    margin-bottom: 5px;
+  }
+  
+  .siDistance {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .siType {
+    background-color: #008009;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .siSubtitle {
+    font-size: 16px;
+  }
+  
+  .siFeatures {
+    font-size: 14px;
+  }
+  
+  .siCancelOp {
+    font-size: 14px;
+    color: #0071c2;
+  }
+  
+  .siCancelOpSubtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .siDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .siRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .siRating > button {
+    background-color: #003580;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .siDetailTexts {
+    text-align: right;
+  }
+  
+  .siPrice {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .siTaxOp {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .siCheckButtonContainer {
+    align-self: flex-end;
+  }
+  
+  .siCheckButton {
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .siCheckButton:hover {
+    background-color: #00509c;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .searchItem {
+      flex-direction: row;
+    }
+  
+    .siDesc {
+      flex: 1;
+      margin-right: 20px;
+    }
+  }
+  .favoritesPage {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;; /* Set a light background color */
+    min-height: 100vh; /* Ensure the page fills the viewport height */
+  }
+  
+  .favoritesTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .favoritesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favoriteItem {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff; /* Set a white background for each favorite item */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .removeButton {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .removeButton:hover {
+    background-color: #ff0000;
+  }
+  
+  .emptyMessage {
+    font-style: italic;
+    color: #666;
+  }
+  
